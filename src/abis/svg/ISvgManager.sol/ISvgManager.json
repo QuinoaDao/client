@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISvgManager",
+  "sourceName": "contracts/svg/ISvgManager.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "color",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultAddr",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultDate",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultApy",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultVolume",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "vaultDacName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "nftEarnings",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "nftHoldings",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct ISvgManager.SvgParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "generateNftSvg",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

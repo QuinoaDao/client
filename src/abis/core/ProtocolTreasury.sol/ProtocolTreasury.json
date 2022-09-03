@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ProtocolTreasury",
+  "sourceName": "contracts/core/ProtocolTreasury.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205f39671be97be1b876bc59656246dff816d5049c87d86aaa0284fafb2c95803764736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212205f39671be97be1b876bc59656246dff816d5049c87d86aaa0284fafb2c95803764736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

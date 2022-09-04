@@ -18,16 +18,16 @@ export const useBuy = (amount:string, address:any, assetAddress:any, currentAddr
             const router = new ethers.Contract(routerAddress, router_abi.abi, signer);
             
             //**Testtoken minting just for testing **
-            const testToken = new ethers.Contract(assetAddress, testToken_abi.abi, signer);
+            //const testToken = new ethers.Contract(assetAddress, testToken_abi.abi, signer);
             try{
-                const mintTx = await testToken.mint(currentAddress, ethers.utils.parseUnits("100"));
-                console.log(mintTx);
-                await mintTx.wait();
-                console.log("token Minted");
+                // const mintTx = await testToken.mint(currentAddress, ethers.utils.parseUnits("100"));
+                // console.log(mintTx);
+                // await mintTx.wait();
+                // console.log("token Minted");
 
                 const asset = new ethers.Contract(assetAddress, ERC20_abi.abi, signer);
-                setTxStatus(mintTx.blockHash === null ? "pending" : "error");
                 const approveTx = await asset.approve(router.address, ethers.utils.parseUnits(amount));
+                setTxStatus(approveTx.blockHash === null ? "pending" : "error");
                 await approveTx.wait();
                 if(!!tokenId) // 추가 구매
                 {

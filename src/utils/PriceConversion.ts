@@ -11,7 +11,7 @@ export const PriceConversion = async (symbol:string, amount:number) => {
     const baseUrl = '/api/v2/tools/price-conversion'
     let price = 0;
     await axios.get(
-        baseUrl, {
+        "https://pro-api.coinmarketcap.com/v2/tools/price-conversion", {
             headers: {
                 "X-CMC_PRO_API_KEY": process.env.REACT_APP_COINMARKETCAP_API_KEY||"",
                 "Accept" : "application/json",

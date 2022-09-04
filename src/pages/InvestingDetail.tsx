@@ -74,21 +74,21 @@ function InvestingDetail({ currentAccount, setCurrentPage }: any) {
       case "pending":
         toastProperty = {
           title: "Pending",
-          description: "Please Wait",
+          description: "This may take up to a minute.",
           backgroundColor: "#5bc0de",
         };
         break;
       case "error":
         toastProperty = {
           title: "Failed",
-          description: "Fail to buy",
+          description: "Transaction reverted ",
           backgroundColor: "#f0ad4e",
         };
         break;
       case "success":
         toastProperty = {
           title: "Success",
-          description: "This is a success toast component",
+          description: "Transaction closed successfully",
           backgroundColor: "#5cb85c",
         };
         break;

@@ -29,7 +29,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
   const vaultList = useVaultList(currentAccount);
   const holdingInfo = useHoldingInfo(currentAccount);
   const [like, setLike] = useState<Map<number, boolean>>(new Map());
-  //const [like, setLike] = useState([false])
+  const [isFiat, setIsFiat] = useState(false);
   const handleLike = (index: number) => {
     if (like.has(index)) {
       console.log("has");
@@ -46,7 +46,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
       console.log("after els", like);
     }
   };
-
+  console.log("FIAT ? ", isFiat);
   return (
     <div>
       <section className="myinvest_banner">
@@ -77,20 +77,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
         <div className="bannerLine_02"></div>
       </section>
       <section className="section_whitespace"></section>
-      {/* <section className="exploreInvesting">
-        <div className="ei_wrap">
-          <div className="ei_title">
-            <span className="explore">Explore</span>
-            <span className="investing">&nbsp;Investing</span>
-            <span className="investing_blur">&nbsp;Investing</span>
-          </div>
-          <span className="subtitle">
-            San Franciscan contrarian Conference attendee Out of touch, ad
-            buying venture investor. Protocol writing, inflated B2B SaaS series
-            B. Direct delivery food buyer frictionless plugin.
-          </span>
-        </div>
-      </section> */}
+
       <section className="highestAPY_wrap">
         <div className="highestAPY">
           <div className="ha_title">
@@ -219,7 +206,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
             {/* <div className="toggle_outline">
               <div className="innerCircle"></div>
             </div> */}
-            <ISwitcher></ISwitcher>
+            <ISwitcher isFiat={isFiat} setIsFiat={setIsFiat}></ISwitcher>
           </div>
           <div className="iL_list"></div>
           <div className="il_table">
@@ -236,7 +223,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
             <div className="header_line"></div>
             {/* 1st */}
             {vaultList?.map((item, idx) => (
-              <Investment item={item} />
+              <Investment item={item} isFiat={isFiat}/>
             ))}
           </div>
           <span className="text-button">

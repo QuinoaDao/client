@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {ethers} from 'ethers';
 import { PriceConversion } from "../utils/PriceConversion";
 
-const Investment = ({item}) => {
+const Investment = ({item, isFiat}) => {
     const [like, setLike] = useState(false); 
     
     return(
@@ -41,7 +41,7 @@ const Investment = ({item}) => {
       </div>
       <div className="totalVolume_wrap">
         <span className="totalVolume QUINOABody-1">
-          ${item.totalVolume}</span>
+          {isFiat ? '$' + item.totalVolume : ethers.utils.formatEther(item.totalAssets) + item.symbol} </span>
       </div>
       <div className="ls_underline"></div>
     </div>

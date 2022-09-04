@@ -34,7 +34,7 @@ interface toastProperties {
 }
 
 function InvestingDetail({ currentAccount, setCurrentPage }: any) {
-  setCurrentPage("");
+  setCurrentPage("investing");
   const { address } = useParams();
   const { state } = useLocation() as RouteState;
   console.log("TOKENID: ", state.tokenId);
@@ -108,9 +108,9 @@ function InvestingDetail({ currentAccount, setCurrentPage }: any) {
     const split = date.split(".");
   }
 
-  const getTokenIcon = (address:string) => {
-    return data.find(x => x.address === address)?.logo;
-  }
+  const getTokenIcon = (address: string) => {
+    return data.find((x) => x.address === address)?.logo;
+  };
 
   useEffect(() => {
     showToast(txStatus);

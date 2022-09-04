@@ -20,6 +20,7 @@ import "swiper/css/scrollbar";
 import { useVaultList } from "../hooks/useVaultList";
 import { assert } from "console";
 import { useHoldingInfo } from "../hooks/useHoldingInfo";
+import ISwitcher from "../components/asset/icons/i-switcher";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 // {key :val, key:val}
@@ -75,7 +76,8 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
         <div className="bannerLine_01"></div>
         <div className="bannerLine_02"></div>
       </section>
-      <section className="exploreInvesting">
+      <section className="section_whitespace"></section>
+      {/* <section className="exploreInvesting">
         <div className="ei_wrap">
           <div className="ei_title">
             <span className="explore">Explore</span>
@@ -88,7 +90,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
             B. Direct delivery food buyer frictionless plugin.
           </span>
         </div>
-      </section>
+      </section> */}
       <section className="highestAPY_wrap">
         <div className="highestAPY">
           <div className="ha_title">
@@ -214,9 +216,10 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
           <div className="fiat_toggle">
             <Infoicon className="info_Icon"></Infoicon>
             <span className="fiat_txt">fiat</span>
-            <div className="toggle_outline">
+            {/* <div className="toggle_outline">
               <div className="innerCircle"></div>
-            </div>
+            </div> */}
+            <ISwitcher></ISwitcher>
           </div>
           <div className="iL_list"></div>
           <div className="il_table">

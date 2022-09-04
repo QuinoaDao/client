@@ -759,6 +759,7 @@ myInvestmentList {
 .mIL_lists_wrap {
   width: 100%;
   height: auto;
+  min-height:510px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1186,7 +1187,7 @@ myInvestmentList {
   flex-grow: 0;
   background-color: var(--neutral-qui-neu-100);
 }
-.mi_table div.list_strategy:last-child .ls_underline {
+.mi_table a.list_strategy:last-child .ls_underline {
   background: none;
 }
 .mi_table .list_strategy .earning_wrap {

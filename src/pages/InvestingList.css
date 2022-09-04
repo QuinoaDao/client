@@ -1084,12 +1084,10 @@
   width: 79px;
 }
 .il_table_header .list_Rowheader .header_Strategy {
-  width: 79px;
-  margin-right: 131px;
+  width: 526px;
 }
 .il_table_header .list_Rowheader .header_Propensity {
-  width: 79px;
-  margin-right: 397px;
+  width: 160px;
 }
 .il_table_header .list_Rowheader .header_Apy {
   width: 29px;
@@ -1167,7 +1165,7 @@
   z-index: 9992;
 }
 .il_table .list_strategy .ls_strategyname_wrap {
-  width: 219px;
+  width: 419px;
   height: 100%;
   flex-grow: 0;
   display: flex;
@@ -1227,12 +1225,12 @@
   z-index: 0;
 }
 .il_table .list_strategy .assistivceChip_wrap {
-  width: 142px;
+  width: 192px;
   height: 100%;
   flex-grow: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   padding: 0;
 }
@@ -1298,7 +1296,7 @@
   color: var(--primary-light-qui-green-400);
 }
 .il_table .list_strategy .apy_number_wrap {
-  width: 364px;
+  width: 114px;
   height: 100%;
   flex-grow: 0;
   display: flex;

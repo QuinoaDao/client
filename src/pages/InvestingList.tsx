@@ -31,7 +31,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
   const vaultList = useVaultList(currentAccount);
   const holdingInfo = useHoldingInfo(currentAccount);
   const [like, setLike] = useState<Map<number, boolean>>(new Map());
-  const [isFiat, setIsFiat] = useState(false);
+  const [isFiat, setIsFiat] = useState(true);
   const handleLike = (index: number) => {
     if (like.has(index)) {
       console.log("has");

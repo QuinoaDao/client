@@ -7,6 +7,8 @@ import { ReactComponent as Infoicon } from "../components/asset/info_icon.svg";
 import { ReactComponent as WishList } from "../components/asset/wishlist_default.svg";
 import { Link } from "react-router-dom";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
+import descriptions from "../utils/VaultDesciptionMapper.json";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Investment from "../components/Investment";
@@ -153,8 +155,13 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
                   </div>
                   <div className="hi_description">
                     <span className="desc_txt QUINOABody-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      seddo dskfna;
+                      {
+                        descriptions.find(x => x.name === item.name) ?
+                        (descriptions.find(x => x.name === item.name)?.desc)?.substring(0, 100)
+                        :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+                          seddo dskfna;"
+                      }
+
                     </span>
                   </div>
                   <div className="hi_info">
@@ -162,7 +169,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
                       <span className="apy_title QUINOASubtitle-2">APY</span>
                       <div className="apy_per">
                         <div className="up_arrow"></div>
-                        <span className="up_Num QUINOAheadline6">8.9%</span>
+                        <span className="up_Num QUINOAheadline6">{item.apy}%</span>
                       </div>
                     </div>
                     <div className="middleLine"></div>

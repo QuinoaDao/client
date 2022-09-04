@@ -18,7 +18,7 @@ export const Navbar = ({currentAccount, correctNetwork, connectWallet, changeNet
             <div className="nav_menu cursor_pointer">
               <Link style={{ textDecoration: 'none' }} to="/portfolio" className={currentPage==="portfolio" ? "nav_txt_focused" : "nav_txt_default"}>Portfolio</Link>
               <Link style={{ textDecoration: 'none' }} to="/investing" className={currentPage==="investing" ? "nav_txt_focused" : "nav_txt_default"}>Investing</Link>
-              <Link style={{ textDecoration: 'none' }} to="draft" className={currentPage==="draft" ? "nav_txt_focused" : "nav_txt_default"}>Draft</Link>
+              {/* <Link style={{ textDecoration: 'none' }} to="draft" className={currentPage==="draft" ? "nav_txt_focused" : "nav_txt_default"}>Draft</Link> */}
             </div>
           </div>
           {currentAccount === undefined ? (

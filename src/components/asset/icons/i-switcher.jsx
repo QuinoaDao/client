@@ -14,7 +14,7 @@ function ISwitcher(props) {
     if (!group) return;
     group.classList.toggle("nc-int-icon-state-b");
     e.currentTarget.dispatchEvent(new Event("ncstatechanged"));
-    props.setIsFiat(!fiat);
+    props.setIsFiat(!props.isFiat);
   }
 
   return (

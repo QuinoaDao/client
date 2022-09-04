@@ -37,7 +37,7 @@ const Investment = ({item, isFiat}) => {
         </div>
       </div>
       <div className="volume24h_wrap">
-        <span className="volume24h QUINOABody-1">${(Math.random()*100).toFixed(2)}</span>
+        <span className="volume24h QUINOABody-1">$0</span>
       </div>
       <div className="totalVolume_wrap">
         <span className="totalVolume QUINOABody-1">

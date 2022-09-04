@@ -78,14 +78,26 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
         <div className="bannerLine_01"></div>
         <div className="bannerLine_02"></div>
       </section>
-      <section className="section_whitespace"></section>
+      <section className="exploreInvesting">
+        <div className="ei_wrap">
+          <div className="ei_title">
+            <span className="explore">Explore</span>
+            <span className="investing">&nbsp;Investing</span>
+            <span className="investing_blur">&nbsp;Investing</span>
+          </div>
+          <span className="subtitle">
+          Take a look at the various strategic products handled by quinoa. <br/>
+          Seize the opportunity to call your crypto assets by depositing them in your preferred strategy.
+          </span>
+        </div>
+      </section>
 
       <section className="highestAPY_wrap">
         <div className="highestAPY">
           <div className="ha_title">
-            <span className="ha_title_main QUINOAheadline5">Highest APY</span>
+            <span className="ha_title_main QUINOAheadline5">Recommended Products</span>
             <span className="ha_title_sub QUINOABody-3">
-              San Franciscan contrarian Conference attendee Out of touch.
+            Products for you, the RISK NEUTRAL INVESTOR!
             </span>
           </div>
           <Swiper
@@ -204,7 +216,7 @@ function InvestingList({ currentAccount, setCurrentPage }:any) {
           <div className="iL_title">
             <span className="iL_title_main QUINOAheadline5">Investment</span>
             <span className="iL_title_sub QUINOABody-3">
-              San Franciscan contrarian Conference attendee Out of touch.
+              Explore all products on Quinoa.
             </span>
           </div>
           <div className="fiat_toggle">

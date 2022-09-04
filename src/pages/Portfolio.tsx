@@ -140,9 +140,6 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
               <span className="mIV_title_main QUINOAheadline5">Investment</span>
               {/* <Infoicon className="info_Icon"></Infoicon>  */}
               </div>
-              <span className="mIV_title_sub QUINOABody-3">
-                San Franciscan contrarian Conference attendee Out of touch.
-              </span>
             </div>
 
             <div className="myInvestment_contents_wrap">

@@ -14,5 +14,13 @@
     {
         "name": "Defi Pulse Indexes",
         "desc": "The DeFi Pulse Index is a digital asset index designed to track tokens’ performance within the Decentralized Finance industry. The index is weighted based on the value of each token’s circulating supply. The DeFi Pulse Index aims to track projects in Decentralized Finance that have significant usage and show a commitment to ongoing maintenance and development."
+    },
+    {
+        "name": "yield Farming MATIC",
+        "desc": "The vault deposits the user's MaticX-MATIC in a Balancer farm, earning the platform's governance token. Earned token is swapped for more of the underlying assets in order to acquire more of the same liquidity token. To complete the compounding cycle, the new MaticX-MATIC is added to the farm, ready to go for the next earning event. The transaction cost required to do all this is socialized among the vault's users."
+    },
+    {
+        "name": "The Quant",
+        "desc": "Ember Fund’s “The Quant” leverages machine learning and regression analysis to generate signals to automatically rebalance between Bitcoin and a Stablecoin. This portfolio is constructed in partnership with Blockforce Capital, a leading multi-strategy cryptocurrency hedge fund for institutional investors. The fund’s strategy is moderately aggressive. The algorithm behind the fund measures long-term market trends, seeking to participate in the general upside of the market while strategically limiting exposure during downturns. The model aims to have limited turnover, regulating trading to remove friction and slippage. The portfolio's goal is to capture more than 80% of Bitcoin’s returns while effectively improving risk versus long positions by exiting in downward trending markets."
     }
 ]

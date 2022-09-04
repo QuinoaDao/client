@@ -3,5 +3,6 @@ import { VaultInfo } from './VaultInfo';
 export interface NftInfo {
     vaultInfo : VaultInfo,
     tokenId : BigNumber,
-    nftSvg : string
+    nftSvg : string,
+    holding? : number
 }

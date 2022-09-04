@@ -598,8 +598,13 @@ myInvestmentList {
   order: 2;
   flex-grow: 0;
 }
-.sortingBox_dropDown {
+.sortingBox_dropDown_show{
   opacity: 1;
+}
+.sortingBox_dropDown_hide {
+  opacity: 0;
+}
+.sortingBox_dropDown {
   position: absolute;
   top: 56px;
   left: -1px;
@@ -871,6 +876,11 @@ myInvestmentList {
 .NFT_Img img {
   width: 350px;
   height: 374px;
+}
+.quiToken_wrap{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .quiToken {
   margin-right: 8px;

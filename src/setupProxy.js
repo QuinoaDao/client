@@ -6,7 +6,7 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://pro-api.coinmarketcap.com',
       pathRewrite: {
-        '^/api': '',
+        '^/api': '/',
       },
       changeOrigin: true,
     })

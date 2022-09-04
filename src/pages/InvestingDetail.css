@@ -1,4 +1,7 @@
 .investingDetail_Wrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
   position: relative;
   width: 1030px;
   height: auto;
@@ -10,6 +13,7 @@
   width: 575px;
   height: auto;
   left: 0;
+  margin-right: 91px;
 }
 .investingDetail_info .investNft_wrap {
   width: 575px;
@@ -684,9 +688,9 @@
 }
 /* -----------buy N sell------------ */
 .investingDetail_buyNsell {
-  position: absolute;
+  position: sticky;
   right: 0;
-  top: 0;
+  top: 158px;
   width: 405px;
   height: 100%;
 }
@@ -1224,7 +1228,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
+  text-align: right;
   color: var(--neutral-qui-neu-800);
 }
 .buyNsell .sellsection_wrap .inputAmount {

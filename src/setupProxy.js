@@ -6,9 +6,13 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://pro-api.coinmarketcap.com',
       pathRewrite: {
-        '^/api': '',
+        '^/api': '/',
       },
       changeOrigin: true,
     })
   );
+
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/build/index.html'));
+  });
 };

@@ -1172,6 +1172,7 @@ myInvestmentList {
   justify-content: flex-end;
   align-items: center;
   padding: 0;
+  color: var(--neutral-qui-neu-900);
 }
 .mi_table .list_strategy .holding_wrap .volume24h {
   flex-grow: 0;
@@ -1219,6 +1220,7 @@ myInvestmentList {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  color: var(--neutral-qui-neu-900);
 }
 .mi_table .list_strategy .earning_wrap .totalvolume {
   flex-grow: 0;

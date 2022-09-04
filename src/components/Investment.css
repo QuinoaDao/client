@@ -228,7 +228,7 @@
     width: 11px;
     height: 11px;
     object-fit: contain;
-    background: url(../components/asset/apy_down_arrow.svg) no-repeat 0 0;
+    background: url(../components/asset/apy_up_arrow.svg) no-repeat 0 0;
     z-index: 9992;
   }
   .apy_number_txt_down {

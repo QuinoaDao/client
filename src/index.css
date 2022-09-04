@@ -11,6 +11,16 @@ body {
 ::selection {
   background-color: #e4f222;
 }
+a {
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
 .cursor_pointer {
   cursor: pointer;
 }

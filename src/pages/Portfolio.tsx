@@ -282,7 +282,7 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
                   <Link 
                   to={'../investing/detail/'+ item.vaultInfo.address} 
                   state={{ assetAddress : item.vaultInfo.asset, vaultInfo: item.vaultInfo, svg : item.nftSvg, tokenId: item.tokenId}}  
-                  style={{ textDecoration: 'none' }} 
+                  style={{ textDecoration: 'none' , color: ' var(--neutral-qui-neu-900);'}} 
                   className="list_strategy"
                   >
                   <div className="ls_strategyname_wrap">
@@ -316,8 +316,8 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
                   </div>
                   <div className="apy_number_wrap">
                     <div className="apy_number">
-                      <div className="apy_down"></div>
-                      <span className="apy_number_txt_down">
+                      <div className="apy_up"></div>
+                      <span className="apy_number_txt_up">
                         {item.vaultInfo.apy}<span className="percent_bold">%</span>
                       </span>
                     </div>

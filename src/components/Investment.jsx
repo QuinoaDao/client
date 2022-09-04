@@ -30,18 +30,18 @@ const Investment = ({item, isFiat}) => {
       </div>
       <div className="apy_number_wrap">
         <div className="apy_number">
-          <div className="apy_down"></div>
-          <span className="apy_number_txt_down">
-            8.9<span className="percent_bold">%</span>
+          <div className="apy_up"></div>
+          <span className="apy_number_txt_up">
+            {item.apy}<span className="percent_bold">%</span>
           </span>
         </div>
       </div>
       <div className="volume24h_wrap">
-        <span className="volume24h QUINOABody-1">$246.7K</span>
+        <span className="volume24h QUINOABody-1">$0</span>
       </div>
       <div className="totalVolume_wrap">
         <span className="totalVolume QUINOABody-1">
-          {isFiat ? '$' + item.totalVolume : ethers.utils.formatEther(item.totalAssets) + item.symbol} </span>
+          {isFiat ? '$' + item.totalVolume : ethers.utils.formatEther(item.totalAssets) + " "+item.symbol} </span>
       </div>
       <div className="ls_underline"></div>
     </div>

@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useInsertionEffect} from "react"
 import { Link } from "react-router-dom";
 import {ethers} from 'ethers';
+import descriptions from "../utils/VaultDesciptionMapper.json";
 import { PriceConversion } from "../utils/PriceConversion";
 
 const Investment = ({item, isFiat}) => {
@@ -26,7 +27,13 @@ const Investment = ({item, isFiat}) => {
         </div>
       </div>
       <div className="assistivceChip_wrap">
-        <div className="chipbox_low"></div>
+        {
+          descriptions.find(x => x.name === item.name) && descriptions.find(x => x.name === item.name).propensity === "low"?
+          <div className="chipbox_low" />
+          :
+          <div className="chipbox_high" />
+        }
+        
       </div>
       <div className="apy_number_wrap">
         <div className="apy_number">
@@ -37,7 +44,14 @@ const Investment = ({item, isFiat}) => {
         </div>
       </div>
       <div className="volume24h_wrap">
-        <span className="volume24h QUINOABody-1">$0</span>
+        <span className="volume24h QUINOABody-1">
+        {
+          isFiat ? 
+          "$" + " " + descriptions.find(x => x.name === item.name).todayFiatVolume
+          :
+          descriptions.find(x => x.name === item.name).todayTokenVolume + " " + item.symbol
+        }
+        </span>
       </div>
       <div className="totalVolume_wrap">
         <span className="totalVolume QUINOABody-1">

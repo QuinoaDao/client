@@ -228,7 +228,12 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
               {isGallery ? (
                 <div className="mIL_lists_row">
                 {tokenList.map((item: NftInfo) => (
-                  <Link to={'../investing/detail/'+ item.vaultInfo.address} state={{ assetAddress : item.vaultInfo.asset, vaultInfo: item.vaultInfo, svg : item.nftSvg, tokenId: item.tokenId}}  style={{ textDecoration: 'none' }} className="mIL_lists_NFT">
+                  <Link 
+                  to={'../investing/detail/'+ item.vaultInfo.address} 
+                  state={{ assetAddress : item.vaultInfo.asset, vaultInfo: item.vaultInfo, svg : item.nftSvg, tokenId: item.tokenId}}  
+                  style={{ textDecoration: 'none' }} 
+                  className="mIL_lists_NFT"
+                  >
                   <div className="NFT_headline">
                     <div className="NFT_dac_name">
                       By {item.vaultInfo.dacName}
@@ -277,7 +282,12 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
                 </header>
                 <div className="header_line"></div>
                 {tokenList.map((item) => (
-                  <div className="list_strategy">
+                  <Link 
+                  to={'../investing/detail/'+ item.vaultInfo.address} 
+                  state={{ assetAddress : item.vaultInfo.asset, vaultInfo: item.vaultInfo, svg : item.nftSvg, tokenId: item.tokenId}}  
+                  style={{ textDecoration: 'none' }} 
+                  className="list_strategy"
+                  >
                   <div className="ls_strategyname_wrap">
                     <div className="list_Strategy_name">
                       <div className="ls_name_title">{item.vaultInfo.name}</div>
@@ -325,7 +335,7 @@ function Portfolio ({currentAccount, setCurrentPage}:any) {
                     <span className="totalvolume QUINOABody-1">${item.vaultInfo.totalVolume}</span>
                   </div>
                   <div className="ls_underline"></div>
-                </div>
+                  </Link>
                 ))}
               </div>
             )}

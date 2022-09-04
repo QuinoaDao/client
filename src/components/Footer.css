@@ -92,3 +92,8 @@
     color: var(--neutral-varient-qui-neu-vari-100);
     transition: all 0.15s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   }
+  .hide{
+    color:#fff !important;
+    user-select: none !important;
+    cursor:auto !important;
+  }

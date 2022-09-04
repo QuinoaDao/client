@@ -14,7 +14,8 @@ export const PriceConversion = async (symbol:string, amount:number) => {
         baseUrl, {
             headers: {
                 "X-CMC_PRO_API_KEY": process.env.REACT_APP_COINMARKETCAP_API_KEY||"",
-                "accept" : "application/json"
+                "Accept" : "application/json",
+                'Content-Type': 'application/json'
             },
             params : {
                 amount : amount,

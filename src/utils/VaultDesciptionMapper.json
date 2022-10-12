@@ -14,13 +14,6 @@
         "desc": "When a user deposits AVAX into this vault, protocol borrows against the position at a safe level of collateral. The borrowed AVAX is then redeposited into the same protocol, and this procedure is repeated multiple times in order to maximize interest earned, earnings which are used to acquire more AVAX. Note that this 'leveraged' multi-lending and -borrowing involves only AVAX; therefore price swings present no liquidation risk."
     },
     {
-        "name": "DAI Leveraged Farming",
-        "propensity": "low",
-        "todayFiatVolume": "0.00",
-        "todayTokenVolume": "0.00",
-        "desc": "With deposited token and borrowed tokens of USDC or DAI, the vault earns the platform's governance token. Earned token is swapped for and in order to acquire more of the same LP token. It occurs when the revenue from farming is bigger than borrowing fee. "
-    },
-    {
         "name": "Defi Pulse Indexes",
         "propensity": "high",
         "todayFiatVolume": "32.3K",

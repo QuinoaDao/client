@@ -72,8 +72,9 @@ function App() {
       
       const hardhat = '0x539'
       const mumbai = '0x13881'
-      if (chainId !== mumbai) {
-        console.log("network is not in mumbai. Change Network");
+      const baobab = '0x3e9'
+      if (chainId !== baobab) {
+        console.log("network is not in baobab. Change Network");
         changeNetwork();
       }
       console.log('Connected to Account: ', address[0]);
@@ -86,11 +87,12 @@ function App() {
   const changeNetwork = async() => {
     const hardhat = '0x539'
     const mumbai = '0x13881'
-    if (window.ethereum.networkVersion !== mumbai) {
+    const baobab = '0x3e9'
+    if (window.ethereum.networkVersion !== baobab) {
         try {
           await window.ethereum.request({
             method: 'wallet_switchEthereumChain',
-            params: [{ chainId: mumbai }]
+            params: [{ chainId: baobab }]
           });
         } catch (err:any) {
             // This error code indicates that the chain has not been added to MetaMask
@@ -99,9 +101,9 @@ function App() {
               method: 'wallet_addEthereumChain',
               params: [
                 {
-                  chainName: 'Mumbai',
-                  chainId: mumbai,
-                  rpcUrls: ['https://rpc-mumbai.maticvigil.com/']
+                  chainName: 'Baobab',
+                  chainId: baobab,
+                  rpcUrls: ['https://klaytn-baobab-rpc.allthatnode.com:8551']
                 }]
             });
           }
@@ -116,8 +118,9 @@ function App() {
 
     const hardhat = '0x539'
     const mumbai = '0x13881'
+    const baobab = '0x3e9'
 
-    if (chainId !== mumbai) {
+    if (chainId !== baobab) {
       setCorrectNetwork(false)
     }else {
       setCorrectNetwork(true)

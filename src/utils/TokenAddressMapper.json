@@ -1,45 +1,37 @@
 [
     {
-        "id" : 3890,
-        "symbol" : "MATIC",
+        "id" : 4256,
+        "symbol" : "KLAY",
         "network" : "mumbai",
-        "address": "0x0000000000000000000000000000000000001010",
-        "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+        "address": "0x0000000000000000000000000000000000000000",
+        "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/4256.png"
     },
     {
         "id" : 825,
         "symbol" : "DPI",
         "network" : "mumbai",
-        "address": "0x435809207A224C606351f8aEfB93bbbCB6025c8d",
+        "address": "0x0eF30fa18EDd065e207Ff5111c353A9f2a59f4bD",
         "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/7055.png"
     },
     {
         "id" : 3408,
         "symbol" : "USDC",
         "network" : "mumbai",
-        "address": "0x0578c551D1e88A225D1246388475658704C03803",
+        "address": "0xa9eC486E2a460aF8f326D71a09564bc3b70e002B",
         "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png"
-    },
- 
-    {
-        "id": 4943,
-        "symbol": "DAI",
-        "network" : "mumbai",
-        "address": "0xcB1e72786A6eb3b44C2a2429e317c8a2462CFeb1",
-        "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/4943.png"
     },
     {
         "id": 5805,
         "symbol": "AVAX",
         "network" : "mumbai",
-        "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+        "address": "0x685E4B3Eead8b0b58296968B93094966f119e766",
         "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png"
     },
     {
         "id": 7278,
         "symbol": "TTK",
         "network" : "mumbai",
-        "address": "0xFed9A212376C8335DBdc15af2cD1069126fEdddE",
+        "address": "0x97060A5aBdfe3CC8F76849129a1fA0612Ff62Bec",
         "logo" : "https://s2.coinmarketcap.com/static/img/coins/64x64/12644.png"
     }
     

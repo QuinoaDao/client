@@ -12,9 +12,17 @@ export const useWalletInfo = (currentAddress : string) => {
     const getWalletInfo = async(currentAddress:string) => {
         if (walletInfo.length > 0) return
         data.map(async (item) => {
-            const token = new ethers.Contract(item.address, ERC20_abi.abi, provider);
-            const tokenBalance = await token.balanceOf(currentAddress);
-            const amount =  Number(ethers.utils.formatEther(tokenBalance));
+            let tokenBalance:any;
+            let amount:number;
+            if(item.symbol === "KLAY"){
+                tokenBalance = await provider.getBalance(currentAddress);
+                amount = Number(ethers.utils.formatEther(tokenBalance));
+            }
+            else {
+                const token = new ethers.Contract(item.address, ERC20_abi.abi, provider);
+                tokenBalance = await token.balanceOf(currentAddress);
+                amount =  Number(ethers.utils.formatEther(tokenBalance));
+            }
             const logo = item.logo;
             if (Number(tokenBalance) > 0 ) {
                 const balance = await PriceConversion(item.symbol, Number(amount.toFixed(2)));
